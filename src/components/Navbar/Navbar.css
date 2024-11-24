@@ -1,0 +1,41 @@
+.nav-link-container {
+  padding: 0 12px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding: 4px 12px;
+  box-shadow: 0 0 2px black;
+  border-radius: 6px;
+  text-wrap: nowrap;
+  margin: 0 5px;
+}
+
+.nav-link:visited {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link.active,
+.nav-link {
+  transition: 0.3s ease all;
+}
+
+.nav-link:not(.active):hover {
+  color: white;
+  background-color: var(--main-color);
+  box-shadow: 0 0 2px var(--main-color);
+}
+
+.nav-link.active {
+  filter: grayscale(0.5);
+  cursor: default;
+  color: var(--main-color);
+  box-shadow: 0 0 2px var(--main-color);
+}
+
+header {
+  box-shadow: 0 1px 1px var(--main-color);
+}
